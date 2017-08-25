@@ -1,105 +1,13 @@
 <html>
 <head>
   <title>nop</title>
-  <style type="text/css">
-  
- .maincont {
-    width: 100%;
-}
-.container{
-  position: relative;
-  width: 35%;
-  float: left;
-}
-.image1{
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-  width: 0;
-  height: 100%;
-  transition: .5s ease;
-  background-image: url('real1.png');
-  background-size: cover;
-}
-
-.container:hover .overlay {
-  width: 100%;
-}
-
-.palace_text {
-  white-space: nowrap; 
-  color: white;
-  font-size: 15px;
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 55%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-.pic2{
-  height: 600px;
-  width: 30%;
-}
-.pic3{
-  height: 300px;
-  width: 30%;
-  float: right;
-}
-.fixed1{
- height: 80px;
- width: 80px;
- float: right;
- margin: -30px 0px 0px 90%;
- position:fixed;
- z-index: 1;
-
-}
-.mid_icon{
- position:fixed;
- height:90px;
- width: 250px;
- margin: -50px 0px 0 42%;
- z-index: 1;
-}
-.fixed2{
- position:fixed;
- top:0;
- width:100%;
- height:100%;
- background-image:url(line.png);
- background-repeat: no-repeat;
-}
-.registration{
- position:fixed;
- top: 88%;
- width:100%;
- height: 50%;
- margin-top: 40px;
-}
-.register_text{
- font-size: 30px;
- color: black;
- margin: 0 0 0 0;
- text-align: center;
- background-color: red;
-
-}
-.content{margin-top:50px;}
-
-  </style>
+  <link rel="stylesheet" type="text/css" href="css/main_baselo.css">
+    <script src="script/main_baselo.js"></script>
 
 </head>
 <body>
   <img src="line.png" class="fixed1">
-   <img src="b_logo.png" class="mid_icon"></center>
+   <a href="www.bharath.ac.in"><img src="b_logo.png" class="mid_icon"></a>
    
 <div class="content">
     <div class="maincont">
@@ -111,8 +19,9 @@
                </div>
              </div>
          </div>
+         <img src="nop_icon.png" class="nop_icon" >
       <a href="developers/index.html">
-       <img src="dev.jpg"
+       <img src="de.jpg"
         class="pic3"
         onmouseover="this.src='dev2.jpg';"
         onmouseout="this.src='dev.jpg';"
@@ -159,8 +68,6 @@ hello
   <br>
   <br>
   <br>
-  <div class="registration"> 
-   <p class="register_text">Register now</p>
-  </div>
+   <p class="register_text"><a href="www.google.com">Register now</p></a>
 </body>
 </html>

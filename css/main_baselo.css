@@ -1,0 +1,96 @@
+ .maincont {
+    width: 100%;
+}
+.container{
+  position: relative;
+  width: 35%;
+  float: left;
+}
+.image1{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+  background-image: url('real1.png');
+  background-size: cover;
+}
+
+.container:hover .overlay {
+  width: 100%;
+}
+
+.palace_text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.nop_icon{
+  height:200px;
+  width: 20%;
+  margin: -140px 0 2% 5%;
+  background-color: blue;
+  padding: 220px 20px 20px 20px;
+  
+
+}
+.pic2{
+  height: 600px;
+  width: 30%;
+}
+.pic3{
+  height: 300px;
+  width: 30%;
+  float: right;
+}
+.fixed1{
+ height: 80px;
+ width: 80px;
+ float: right;
+ margin: -30px 0px 0px 90%;
+ position:fixed;
+ z-index: 1;
+
+}
+.mid_icon{
+ position:fixed;
+ height:90px;
+ width: 18%;
+ margin: -40px 0px 0 42%;
+ z-index: 1;
+}
+.fixed2{
+ position:fixed;
+ top:5px;
+ width:100%;
+ height:100%;
+ background-image:url(line.png);
+ background-repeat: no-repeat;
+}
+
+.register_text{
+ margin: 0 0 0 15%;
+ position: fixed;
+ z-index: 1;
+ bottom: 10px;
+ font-size: 30px;
+ text-align: center;
+ background-color: red;
+ padding: 5px 30% 5px 30%;
+
+}
+.content{margin-top:60px;}
