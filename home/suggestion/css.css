@@ -1,0 +1,26 @@
+.sug_form{
+  		background-image: url(back.jpg);
+ }
+.toolbar{
+	background: rgba(0,0,0,0.1);
+}
+.rules{
+	margin-left: 20px;
+	margin-top: 30px;
+}
+.head{
+	color: red;
+	font-family: bold;
+	font-size: 20px;
+} 
+form{
+	padding-top: 10px;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	background: rgba(0,0,0,0.2);
+}   
+.form_heading{
+	color: red;
+	font-size: 20px;
+	margin-left: 40px;
+}  

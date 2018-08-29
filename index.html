@@ -1,48 +1,148 @@
-
-<html>
+<!DOCTYPE>
+<html lang="en">
 <head>
-	<title>main</title>
-	<style type="text/css">
-
-  .container{
-     float: right;
-     height: 250px; width: 19%;
-  }
-      .daily_alerts{ 
-        margin: -230px 10px 20px 30%;
-      }
-      .alerts{
-        font-size: 20px;
-        color: white;
-      }
-
-	</style>
-	  <script>
-    var date = new Date()
-    var time = date.getHours()
-   if (time <= 12) 
-    document.write("<img src = 'sunrise.jpg'; height='250px'; width='80%';>");
- else if (time <=17)
-  document.write("<img src = 'teatime.jpg'; height='250px'; width='80%';>");
-else{
-    document.write("<img src = 'updated.jpg'; height='250px'; width='80%';>");
-}
-  </script>
+  <title>test page</title>  
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/main_baselo.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="script/main_baselo.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nova+Flat" rel="stylesheet">
+     <!--offline--><link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+     <!--offline--><script src="css/bootstrap.js"></script>
+  <style type="text/css">
+  	.parallax-window {
+	    min-height: 400px;
+	    background: transparent;
+	}
+	.nav:hover{
+		background-color: white;
+		color: black !important;
+		-webkit-transition: background-color 1s,color 1s; /* For Safari 3.1 to 6.0 */
+    	transition: background-color 1s,color 1s;
+	}
+  </style>
 </head>
-<body>
-<div class="container">
-     <img src="real1.png" height="250px" width="100%">
-	<div class="daily_alerts">
-      <font size="5px" color="red">Daily Alerts</font>
-      <br>
-    <p class="alerts">
-      !!!--no alerts--!!<!--daily alerts starts here & only 1 line is inserted good-->
-    </p>  
-  </div>
-</div>
-<iframe src="main base lo.html" name="framev" height="101%"width="100%">
-your browser is waste
-</iframe>
+<body onload="typeWriter();">
+
+  <script>
+    var i = 0;
+    var txt = 'Bharath University NOP Club !';
+    var speed = 50;
+
+    function typeWriter() {	
+      if (i < txt.length) {
+        document.getElementById("typer").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+      else{
+        showButton();
+      }
+    }
+
+    function showButton() {
+      $(".btn").fadeIn(1000);
+    }
+    $(document).ready(function(){
+        $(".btn").hide();
+        $("#main").hide();
+        $(".btn-success").click(function(){
+          $("#popover").slideUp(1000,function() {
+            $("#main").fadeIn(1000);
+          });
+        });
+    });
+  </script>
+  	<div  style="background-color: black;height: 100%;text-align: center;z-index: 10;" id="popover">
+		<img src="logo.png" style="margin-top: 300px;" height="150">
+		<h1 style="color:white;font-family: 'Cinzel Decorative', cursive;" id="typer"></h1>
+		<button class="btn btn-success">Take a look !</button>
+    </div>
+	<div id="main"> 
+	  <div style="background-color:black;position: fixed;z-index: 100;" class="col-sm-12">
+	  	<img src="nop.png" style="padding-left:0px;float: left;margin-top: 7px;" width="121px" height="40px" class="col-sm-1">
+	  	<h1  class="col-sm-1" style="color:white;padding-left:0px;font-family: 'Cinzel Decorative', cursive;margin-top: 7px;font-family: 'Nova Flat', cursive;">Club</h1>
+	  	<div class="col-sm-2 col-sm-offset-8" style="height: 57px;">
+	  		<span class="col-sm-6 nav" style="color:white;height:100%;font-family: 'Nova Flat', cursive;cursor: pointer;" href="#"><center><div style="margin-top: 15px;"><span class="glyphicon glyphicon-log-in"></span> Login</div></center></span>
+	  		<span class="col-sm-6 nav" style="color:white;height:100%;font-family: 'Nova Flat', cursive;cursor: pointer;" href="#"><center><div style="margin-top: 15px;"><span class="glyphicon glyphicon-save"></span> Register</div></center></span>
+	  	</div>
+	  </div>
+	  <div class="col-sm-12 pad0" style="min-height: 200px;margin-top: 50px;">
+	      <div class="col-sm-12 pad0">
+	        <img src="bha.jpg" class="col-sm-12 pad0">
+	      </div>
+	  </div>
+	   <div class="jumbotron">
+		    <h1 style="font-family: 'Cinzel Decorative', cursive;margin-top: 20px;">Bharath University</h1>
+		    <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing
+		    responsive, mobile-first projects on the web.</p>
+	    </div>
+	</div>
+          
+            <!--<div id="main"> 
+             <center>
+               <a href="www.bharath.ac.in">
+                <div style="background-color:white;position:fixed;"><img src="b_logo.png"></div>
+               </a>
+             </center>
+          <div id="f1_container">
+          <div id="f1_card">
+            <div class="face">
+              <img src="bha.jpg" class="bha">
+            </div>
+            <div class="back face">
+              <p style="color:red; font-size:30px;">N.O.P</p> 
+                 <p><i>This is the Home page of our club N.O.P</i></p>
+
+            </div>
+          </div>
+          </div> 
+
+          <img src="real_stu.png" class="stu">
+
+
+               <!--  <div class="row">
+                  <div class="col-sm-18">
+                     <div class="container_main">      
+                      <img src="palace.jpg" class="image1">
+                       <div class="overlay">
+                         palace text starts here 
+                         <div class="palace_text">From the below link<br>you can access your portal<br>where you can chat,palce poles<br>comment,apply for events<br>and much more fun...<br><a href="login">My PALACE</a>
+                         </div>
+                       </div>
+                     </div>
+                  </div>
+
+              <img src="nop.png" class="nop_icon" > 
+               <a href="registration"><img src="reg2.gif" class="reg_text"> </a> 
+
+
+
+             <a href="developers/index.html">
+              <img src="de.jpg"
+               class="pic3"
+               onmouseover="this.src='dev2.jpg';"
+               onmouseout="this.src='dev.jpg';">
+             </a> 
+
+
+          </div>
+
+
+          <div id="all" onclick="shrink(this)">
+
+          <p id="text_out">Click here...<br>LECTURER LOGIN</p>
+
+          <form action="lec_check.php" method="post" id="input" class="form-inline">
+          <input type="text" name="uname" size="30" placeholder="USERNAME" class="form-control">
+          <input type= "pasword" name="pass" size="30" placeholder="PASSWORD" class="form-control">
+          <input type="submit" value="LOGIN" name="ok" class="btn btn-success">
+          </form>
+              </div> 
 
 </body>
 </html>

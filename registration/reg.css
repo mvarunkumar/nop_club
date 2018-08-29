@@ -1,0 +1,48 @@
+
+.assasin{
+  float: left;
+  margin-right: -100px;
+  border-radius: 0px;
+}
+form{
+	text-align: center;
+	background-color:#bfe7ff;
+	border-radius: 100% ;
+
+}
+.submit{
+	background-color: green;
+	border-radius: 100%;
+	font-size: 20px;
+	padding: 20px 30px 20px 30px;
+	text-align: center;
+  margin: 0px 20px 0 20px;
+}
+img{
+	border-radius: 50%;
+}
+  p.color{
+    font-size: 20px;
+    color: blue;
+    margin: 5px 5px 0 0;
+  }
+  p.color:hover{color: red}
+  i{
+    font-size: 20px;
+    color: blue;
+  }
+  .line{
+    height: 50px;
+    width: 50px;
+  }
+  .fac:hover{
+    font-size: 35px;
+    text-align: center;
+    color: red;   
+  }
+  .fac{
+    margin-top: 0px;
+    font-size: 30px;
+    text-align: center;
+    color: red;
+  }

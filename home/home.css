@@ -1,0 +1,146 @@
+body{
+      width: 100%;
+}
+
+/*request properties*/
+div#request{
+      z-index: 5;
+      background-color: red;
+      height: 200px;
+      width: 200px;
+      float: right;
+      margin-top: 10px;
+      margin-right: 10px;
+
+      -webkit-transition:height 500ms;
+}
+img.request{
+      position: absolute;
+      height: 200px;
+      width: 200px;
+}
+#req_text{
+      position: absolute;
+      margin-left: 5px;
+      font-size: 20px;
+}
+
+/*All suggest  properties goes here*/
+div#suggest{
+      background-color: black;
+      position: fixed;
+      bottom: 0;
+      margin-left: 35%;
+      height: 100px;
+      width: 30%;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      z-index: 5;
+
+      -webkit-transition :height 1000ms,width 500ms;
+}
+img.suggest{
+      height: 100px;
+      width: 100%;
+      bottom: 0;
+      position: absolute;
+
+}
+#suggest_text{ 
+      margin-left: 20px;
+      margin-top: 10px;
+      color: white;
+      visibility: hidden;
+}
+
+/*daily news properties*/
+#news{
+      background-color: black;
+      height:220px;
+      width:100%;
+}
+marquee.line1{
+
+      position: absolute;
+      color: red;
+      margin-top: 25px;
+      margin-right: 390px;
+      font-size: 20px;
+}
+marquee.line2{
+      position: absolute;
+      color: blue;
+      margin-top: 50px;
+      margin-right: 440px;
+      font-size: 20px;
+}
+marquee.line3{
+      position: absolute;
+      color: green;
+      margin-top: 80px;
+      margin-right: 445px;
+      font-size: 20px;
+}
+marquee.line4{
+      position: absolute;
+      color: white;
+      margin-top: 110px;
+      margin-right: 460px;
+      font-size: 20px;
+}
+marquee.line5{
+      position: absolute;
+      color: orange;
+      margin-top: 135px;
+      margin-right: 460px;
+      font-size: 20px;
+}
+#hand{
+      float: right;
+      height: 260px;
+      width: 250px;
+      margin-top: -20px;
+}
+
+/*daily entitles*/
+.daily_pic{
+      border-radius: 20px;
+}
+.heading_entitle{
+      font-size: 50px;
+      color: red;
+      z-index: 10;
+      font-style: italic;
+}
+.container{
+      background-image: url('5.jpg');
+      margin-top: 20px; 
+      padding: 10px 60px 30px 60px;
+      border-radius: 20px;
+      background:rgba(0,0,0,0.3);
+}
+
+/*chat opt div*/
+#chat{
+      position: absolute;
+      float: left;
+      width: 25%;
+      height: 150px;
+      margin-left: 25%;
+      margin-top: 50px;
+
+      -webkit-transition: width 300ms;
+
+}
+#chat_icon{
+      height: 100%;
+      width: 100%;           
+
+       -webkit-transition: width 500ms;
+
+}
+#chat_txt{
+      color: white;
+      font-size: 20px;
+      display: none;
+}
